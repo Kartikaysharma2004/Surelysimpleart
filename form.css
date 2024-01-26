@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  /* overflow-x: hidden; */
+}
+nav {
+  background: white;
+  height: 125px;
+  width: 100%;
+}
+label img {
+  height: 124px;
+  position: relative;
+  top: -3px;
+  left: 14px;
+}
+label a.Home {
+  background-color: transparent;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 122px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  line-height: 10px;
+  text-decoration: none;
+}
+a.active,
+a:hover {
+  background: black;
+  transition: 0.5s;
+  color: white;
+  border-radius: 9px;
+}
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  top: 45px;
+  position: relative;
+  display: none;
+}
+#check {
+  display: none;
+}
+h4 {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+  font-family: sans-serif;
+  font-weight: normal;
+  text-shadow: 0px 0px 2px gray;
+  text-align: center;
+  color: black;
+  font-size: 22px;
+  position: relative;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 11px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #45a049;
+  transition: 0.44s;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+@media (max-width: 952px) {
+  label img {
+    height: 124px;
+    position: relative;
+    top: -3px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 125px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 999;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 39px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}

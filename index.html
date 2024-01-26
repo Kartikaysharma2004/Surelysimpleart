@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="logopng.png">
+  <title>Surelysimpleart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/cfcf372f7f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleMenu() {
+      var checkbox = document.getElementById('check');
+      var body = document.body;
+
+      if (checkbox.checked) {
+        body.style.overflow = 'hidden';
+      } else {
+        body.style.overflow = 'auto';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <nav>git add README.md
+    <input type="checkbox" id="check" onchange="toggleMenu()">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label><a class="Home" href="index.html"><img src="logopng.png" alt="logo"></a></label>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="form.html">Work With Us</a></li>
+      <li><a href="login.html">Client Login</a></li>
+      <li><a href="lm.html">About Us</a></li>
+    </ul>
+  </nav>
+  <hr>
+  <div class="main">
+    <h4 class="h4">The world's best artwork gallery</h4>
+    <a href="form.html"><button class="firstbtn" type="button">Work With Us</button></a>
+    <div class="img">
+      <img class="third" src="3.jpg" alt="image3">
+      <img class="second" src="2.jpg" alt="image2">
+      <img class="one" src="1.jpg" alt="image">
+    </div>
+    <div class="frame"><img src="frame.png" alt="frame"></div>
+  </div>
+  <div class="main2">
+    <h5 class="h5">Certified In National Level Art Contest</h5>
+    <a href="lm.html"><button class="secondbtn" type="button">About US</button></a>
+    <div class="oneimg"><img src="certificate.jpg" alt="certificate">
+    </div>
+  </div>
+  <div class="main3">
+    <h6 class="h6">Every Interaction is an opportunity to engage and wow.</h6>
+    <a href="gallery.html"><button class="thirdbtn" type="button">Browse Gallery</button></a>
+    <div class="secondimg"><img src="colourfull.jpg" alt="colourfull">
+    </div>
+  </div>
+  <div class="main4">
+    <h2 class="h2">Get Featured Your Art On Our Website</h2>
+    <a href="form.html"><button class="fourthbtn" type="button">Work With Us</button></a>
+    <div class="onevideo"><video src="handmade.mp4" muted autoplay loop></video>
+    </div>
+  </div>
+  <!-- Footer Content -->
+  <hr style="position: relative;top: 90px;">
+  <footer>
+    <div class="container">
+      <a class="Home" href="index.html"><img src="logopng.png" alt="logo"></a>
+      <div class="row">
+        <div class="footer-col">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="">Our Partners</a></li>
+            <li><a href="">Store & Services</a></li>
+            <li><a href="">Customer Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Order and Pickup</h4>
+          <ul>
+            <li><a href="">Delivery</a></li>
+            <li><a href="">Order Options</a></li>
+            <li><a href="">Track your Order</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Social Media News</h4>
+          <ul>
+            <a class="instagram" href="https://www.instagram.com/surelysimpleart/"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a class="facebook" href="https://www.facebook.com/colouryourmood"><i class="fa-brands fa-facebook"></i></a>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <a class="linkedin" href="https://www.linkedin.com/in/kartikay-sharma2004/"><i
+                class="fa-brands fa-linkedin"></i></a>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="row2">
+        <div class="col">
+          <p>&#169; 2023 Surelysimpleart. All Rights Reserved.</p>
+        </div>
+        <div class="col2">
+          <p>Privacy Notice | Terms of Use</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

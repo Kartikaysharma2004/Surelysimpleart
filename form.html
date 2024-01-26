@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logopng.png">
+    <title>Surelysimpleart | Work With Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/cfcf372f7f.js" crossorigin="anonymous"></script>
+    <script>
+        function toggleMenu() {
+            var checkbox = document.getElementById('check');
+            var body = document.body;
+
+            if (checkbox.checked) {
+                body.style.overflow = 'hidden';
+            } else {
+                body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check" onchange="toggleMenu()">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label><a class="Home" href="index.html"><img src="logopng.png" alt="logo"></a></label>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="login.html">Client Login</a></li>
+            <li><a href="lm.html">About Us</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <h4>Fill this form to Work With Us</h4>
+    <div class="container">
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+            
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email" placeholder="Your email address" required>
+
+            <label for="Skills">Skills</label>
+            <select id="Skills" name="Skills" required>
+                <option value="" selected disabled>Skills</option>
+                <option value="drawing">Drawing and Draftsmanship</option>
+                <option value="color">Color Theory and Mixing</option>
+                <option value="brushwork">Brushwork and Technique</option>
+            </select>
+
+            <label for="Availability">Availability</label>
+            <select id="Availability" name="Availability" required>
+                <option value="" selected disabled>Availability</option>
+                <option value="start_date">Start Date</option>
+                <option value="work_hours">Preferred work hours</option>
+                <option value="full_part_time">Full-time or part-time availability</option>
+            </select>
+
+
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="" selected disabled>Select a country</option>
+            </select>
+
+            <label for="Work Samples">Work Samples</label>
+            <select id="Work Samples" name="Work Samples" required>
+                <option value="" selected disabled>Any Work Samples Available ?</option>
+                <option value="Yes">Yes, (Attach the link of your work in text area)</option>
+                <option value="No">No</option>
+                <option value="working_on_it">I'm working on it</option>
+            </select>
+
+
+            <script>
+                const countries = ["Afghanistan", "Albania", "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo", "Costa Rica", "Croatia", "Cuba", "Cyprus", "Czechia", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor (Timor-Leste)", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar (Burma)", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway", "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Sudan", "Spain", "Sri Lanka", "Sudan", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"];
+                const countrySelect = document.getElementById("country");
+
+                countries.forEach(country => {
+                    const option = document.createElement("option");
+                    option.value = country.toLowerCase();
+                    option.text = country;
+                    countrySelect.add(option);
+                });
+            </script>
+
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write your message.." required
+                style="height:200px"></textarea>
+            <input type="hidden" name="access_key" value="3446d9d4-9b71-4dc8-a927-a9dd06ba62ea">
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
