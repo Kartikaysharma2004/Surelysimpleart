@@ -1,7 +1,26 @@
+![Surelysimpleart](https://github.com/Kartikaysharma2004/Surelysimpleart/assets/136084119/994b0786-e7a4-4804-b8b1-30c0baf063b1)
 
-# Surelysimpleart
+<div align="center">
+&middot;
+<i>Surelysimpleart bulit with Pure Html, Css & JavaScript</i>
+&middot;
+<br/>
+<br/>
+</div>
 
-Proud to unveil my latest project: A Netflix Clone! 🔍✨🎬
+<p align="center">
+    <img src="[https://img.shields.io/github/forks/kartikaysharma2004/surelysimpleart?style=for-the-badge]" />
+  <a href="https://surelysimpleart.netlify.app/">
+    <img src="https://img.shields.io/static/v1?label=&message=View%20Demo&style=for-the-badge&color=black&logo=vercel" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="introduction">Introduction</a> •
+  <a href="key-features-">Key Features</a> •
+    <a href="about-me-">About Me</a> •
+  <a href="license-">License</a>
+</p>
 
 # Introduction 👋
 
