@@ -15,13 +15,6 @@
   </a>
 </p>
 
-<p align="center">
-  <a href=https://github.com/Kartikaysharma2004/Surelysimpleart?tab#introduction">Introduction</a> •
-  <a href="key-features-">Key Features</a> •
-    <a href="about-me-">About Me</a> •
-  <a href="license-">License</a>
-</p>
-
 # Introduction 👋
 
 Introducing a captivating art gallery website designed with a focus on user experience and aesthetic appeal. This seamlessly responsive platform boasts five distinct landing pages, each serving a unique purpose.
