@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <a href="introduction">Introduction</a> •
+  <a href=https://github.com/Kartikaysharma2004/Surelysimpleart?tab#introduction">Introduction</a> •
   <a href="key-features-">Key Features</a> •
     <a href="about-me-">About Me</a> •
   <a href="license-">License</a>
