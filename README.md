@@ -30,4 +30,4 @@ Introducing a captivating art gallery website designed with a focus on user expe
 I'm a Passionate Frontend Developer with a flair for transforming creative visions into interactive and user-centric digital experiences.
 
 ## License 📄
-This project is licensed under the MIT License - see the [License.md](https://github.com/Kartikaysharma2004/Surelysimpleart/pull/1)
+This project is licensed under the MIT License - see the [License.md](https://github.com/Kartikaysharma2004/Surelysimpleart/blob/main/LICENSE.md)
