@@ -25,6 +25,12 @@ Introducing a captivating art gallery website designed with a focus on user expe
 - Client Login Page
 - About Us Page
 
+## Frontend Stack 🛠️
+
+- [Html](https://html.com/)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://www.javascript.com/)
+
 ## Key Features:
 
 • Responsive Design: Ensuring a consistent and visually appealing experience across various devices, from desktops to smartphones.
