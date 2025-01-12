@@ -5,10 +5,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body {
-    font-family: "Oswald", sans-serif;
-    /* overflow-x: hidden; */
-  }
+html{
+  scroll-behavior: smooth;
+}
 nav {
     background: white;
     height: 125px;
