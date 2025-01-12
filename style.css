@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   overflow-x: hidden;
@@ -61,133 +65,69 @@ a:hover {
 #check {
   display: none;
 }
-
-/* Main Content CSS */
-.main {
-  display: block;
-  background-color: #ebf7ed;
-  height: 29vw;
-  margin: 50px 90px;
-  border-radius: 29px;
-  text-align: end;
-}
-.main2 {
-  display: block;
-  background-color: #e6f7fe;
-  height: 29vw;
-  margin: 50px 90px;
-  border-radius: 29px;
-  text-align: end;
-}
-.main3 {
-  display: block;
-  background-color: #fbf1e8;
-  height: 40vw;
-  margin: 50px 90px;
-  border-radius: 29px;
-  text-align: end;
-}
+.main,
+.main2,
+.main3,
 .main4 {
   display: block;
-  background-color: #e6f7fe;
-  height: 40vw;
   margin: 50px 90px;
   border-radius: 29px;
   text-align: end;
 }
-.h2 {
-  display: inline-block;
+.main {
+  background-color: #ebf7ed;
+  height: 29vw;
+}
+
+.main2 {
+  background-color: #e6f7fe;
+  height: 29vw;
+}
+
+.main3 {
+  background-color: #fbf1e8;
+  height: 40vw;
+}
+
+.main4 {
+  background-color: #e6f7fe;
+  height: 40vw;
+}
+.h2,
+.h4,
+.h5,
+.h6 {
   position: relative;
-  top: 14vw;
   font-size: 2vw;
   font-family: "Rubik", sans-serif;
   font-weight: normal;
   text-transform: capitalize;
   left: -8vw;
+}
+
+.h2,
+.h6 {
+  display: inline-block;
+  top: 14vw;
   margin-right: -15vw;
   object-fit: contain;
   width: 36vw;
   text-align: center;
 }
-.h4 {
-  display: flex;
-  justify-content: end;
-  position: relative;
-  top: 9vw;
-  font-size: 2vw;
-  font-family: "Rubik", sans-serif;
-  font-weight: normal;
-  text-transform: capitalize;
-  left: -8vw;
-}
+
+.h4,
 .h5 {
   display: flex;
   justify-content: end;
-  position: relative;
   top: 9vw;
-  font-size: 2vw;
-  font-family: "Rubik", sans-serif;
-  font-weight: normal;
-  text-transform: capitalize;
-  left: -8vw;
+}
+
+.h5 {
   margin-right: -2vw;
 }
-.h6 {
-  display: inline-block;
-  position: relative;
-  top: 14vw;
-  font-size: 2vw;
-  font-family: "Rubik", sans-serif;
-  font-weight: normal;
-  text-transform: capitalize;
-  left: -8vw;
-  margin-right: -15vw;
-  object-fit: contain;
-  width: 36vw;
-  text-align: center;
-}
-.firstbtn {
-  border: 9px solid black;
-  border-radius: 19px;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  padding: 2px 4px;
-  top: 12vw;
-  position: relative;
-  left: -17vw;
-  width: 13vw;
-  font-size: 1vw;
-  z-index: 999;
-}
-.secondbtn {
-  border: 9px solid black;
-  border-radius: 19px;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  padding: 2px 4px;
-  top: 12vw;
-  position: relative;
-  left: -17vw;
-  width: 13vw;
-  font-size: 1vw;
-  z-index: 999;
-}
-.thirdbtn {
-  border: 9px solid black;
-  border-radius: 19px;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  padding: 2px 4px;
-  top: 20vw;
-  position: relative;
-  left: -17vw;
-  width: 13vw;
-  font-size: 1vw;
-  z-index: 999;
-}
+.firstbtn,
+.secondbtn,
+.thirdbtn,
 .fourthbtn {
   border: 9px solid black;
   border-radius: 19px;
@@ -195,12 +135,23 @@ a:hover {
   color: white;
   cursor: pointer;
   padding: 2px 4px;
-  top: 19vw;
   position: relative;
   left: -17vw;
   width: 13vw;
   font-size: 1vw;
   z-index: 999;
+}
+.firstbtn,
+.secondbtn {
+  top: 12vw;
+}
+
+.thirdbtn {
+  top: 20vw;
+}
+
+.fourthbtn {
+  top: 19vw;
 }
 .oneimg {
   display: flex;
@@ -210,7 +161,7 @@ a:hover {
   filter: drop-shadow(0 0 0.75rem black);
   margin-right: 39vw;
 }
-.frame{
+.frame {
   display: none;
 }
 .img {
@@ -219,7 +170,6 @@ a:hover {
   height: 15vw;
   margin: -27px 199px 0 0;
   filter: drop-shadow(0 0 0.75rem black);
-  /* overflow-x: hidden; */
 }
 img.one {
   position: relative;
@@ -248,7 +198,6 @@ img.one {
   filter: drop-shadow(0 0 0.9rem black);
   margin-right: 39vw;
 }
-/* Footer content CSS  */
 footer {
   position: relative;
   top: 180px;
@@ -340,7 +289,6 @@ a.linkedin {
   }
 
   footer .footer-col ul {
-    /* margin-left: 20px; */
     margin-bottom: 20px;
   }
   .footer-col ul i {
@@ -391,67 +339,31 @@ a.linkedin {
   #check:checked ~ ul {
     left: 0;
   }
-  .main {
-    height: 123vw;
+  .main,
+  .main2,
+  .main3,
+  .main4 {
     margin: 50px 19px;
     position: relative;
   }
+  .main,
   .main2 {
     height: 123vw;
-    margin: 50px 19px;
-    position: relative;
   }
+
   .main3 {
     height: 148vw;
-    margin: 50px 19px;
-    position: relative;
   }
+
   .main4 {
     height: 148vw;
     margin: 50px 19px 0 19px;
-    position: relative;
   }
-  .h2 {
-    position: relative;
-    top: 104vw;
-    font-size: 5.5vw;
-    font-family: "Rubik", sans-serif;
-    font-weight: normal;
-    text-transform: capitalize;
-    display: flex;
-    justify-content: center;
-    width: 98%;
-    transform: translate(10%, 1%);
-  }
-  .h4 {
-    position: relative;
-    top: 78vw;
-    font-size: 5.5vw;
-    font-family: "Rubik", sans-serif;
-    font-weight: normal;
-    text-transform: capitalize;
-    display: flex;
-    justify-content: center;
-    width: 98%;
-    transform: translate(10%, 1%);
-    text-align: center;
-  }
-  .h5 {
-    position: relative;
-    top: 77vw;
-    font-size: 5.5vw;
-    font-family: "Rubik", sans-serif;
-    font-weight: normal;
-    text-transform: capitalize;
-    display: flex;
-    justify-content: center;
-    width: 98%;
-    transform: translate(10%, 1%);
-    text-align: center;
-  }
+  .h2,
+  .h4,
+  .h5,
   .h6 {
     position: relative;
-    top: 104vw;
     font-size: 5.5vw;
     font-family: "Rubik", sans-serif;
     font-weight: normal;
@@ -461,54 +373,60 @@ a.linkedin {
     width: 98%;
     transform: translate(10%, 1%);
   }
-  .firstbtn {
-    width: 30vw;
-    margin-top: 79vw;
-    font-size: 3vw;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-47%);
-    padding: 6px 11px;
-    border: 4px solid black;
-    z-index: 0;
+
+  .h2,
+  .h6 {
+    top: 104vw;
   }
-  .secondbtn {
-    width: 30vw;
-    margin-top: 85vw;
-    font-size: 3vw;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-49%);
-    padding: 6px 11px;
-    border: 4px solid black;
-    z-index: 0;
+
+  .h4 {
+    top: 78vw;
+    text-align: center;
   }
-  .thirdbtn {
-    width: 30vw;
-    margin-top: 105vw;
-    font-size: 2.9vw;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-49%);
-    padding: 6px 11px;
-    border: 4px solid black;
-    z-index: 0;
+
+  .h5 {
+    top: 77vw;
+    text-align: center;
   }
+  .firstbtn,
+  .secondbtn,
+  .thirdbtn,
   .fourthbtn {
     width: 30vw;
-    margin-top: 105vw;
-    font-size: 2.9vw;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
     padding: 6px 11px;
     border: 4px solid black;
     z-index: 0;
+    transform: translateX(-50%);
   }
-  .img{
+
+  .firstbtn {
+    margin-top: 79vw;
+    font-size: 3vw;
+    transform: translateX(-47%);
+  }
+
+  .secondbtn {
+    margin-top: 85vw;
+    font-size: 3vw;
+    transform: translateX(-49%);
+  }
+
+  .thirdbtn {
+    margin-top: 105vw;
+    font-size: 2.9vw;
+    transform: translateX(-49%);
+  }
+
+  .fourthbtn {
+    margin-top: 105vw;
+    font-size: 2.9vw;
+  }
+  .img {
     display: none;
   }
-  .frame{
+  .frame {
     display: block;
     height: 36vw;
     margin-top: 19px;
